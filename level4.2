@@ -1,0 +1,19 @@
+level4
+
+2—
+#include <iostream>
+using namespace std;
+int say(int n) {
+    int s = 0;
+    if (n == 0) return 1;
+    while (n) {
+        s++;
+        n /= 10;
+    }
+    return s;
+}
+int main() {
+    int a;
+    cin >> a;
+    cout << say(a);
+}
